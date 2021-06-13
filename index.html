@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Learning Web Design</title>
+  <link rel="stylesheet" href="indexstyle.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+</head>
+
+<!-- ################## -->
+<!-- ################## -->
+<!-- ################## -->
+
+<body>
+  <div>
+    <h2 class="yellow-text">CatPhotoApp</h2>
+    <p class="my-writing">This is a later inserted line to link into an ID , the said ID is of one of my comments
+      bellow: <a href="#a-comment">here</a>. This should jump to that comment on the page.</p>
+    <p class="yellow-text"> Click here <a href="#"> to view more cat photos</a>.</p>
+    <a href='#'></a><img src="https://www.bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+    <p class="yellow-text">Things cats love:</p>
+    <ul class="yellow-text">
+      <li>cat nip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <p class="yellow-text">Top 3 things cats hate:</p>
+    <ol class="yellow-text">
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>
+    </ol>
+
+    <form class="yellow-text" action="https://www.freecatphotoapp.com/submit-cat-photo">
+      <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+      <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+      <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+      <!--Changes were made following line 71 - changed style using pattr='value'] in the CSS.-->
+      <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+      <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic">
+        Energetic</label><br>
+      <input type="text" placeholder="cat photo URL" required>
+      <button type="submit">Submit</button>
+    </form>
+    <p class="my-writing">So far, I have practiced image elemets with the <code><ESCAPE_HTML>&lt;img&gt;</code> tag,
+      links with the anchor <code>&lt;a&gt;</code> tag, basic elements such as paragraph and heading
+      <code>&lt;p&gt;</code> and <code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>. Finally, I also emplyed some CSS
+      formatting and I have learned how to incorporate the CSS style-sheet in the <code>&lt;head&gt;</code>'s via
+      <code>&lt;link rel="stlesheet" href="my.style.css"&gt;</code> meta.
+    </p>
+
+  </div>
+  <div>
+    <h2 class="yellow-text">An example of a smaller image</h2>
+    <img class="smaller-image thin-blue-border" src="https://www.bit.ly/fcc-relaxing-cat"
+      alt="A cute orange cat lying on its back.">
+    <p class="a-comment" class="my-writing">Here I implemented the style (class) <code>.smaller-image</code> from my CSS
+      file <code>indexstyle.css</code> on line 26.</p>
+    <img class="smaller-image thin-rounded-blue-border" src="https://www.bit.ly/fcc-relaxing-cat"
+      alt="A cute orange cat lying on its back.">
+    <img class="smaller-image rounded-blue-border" src="https://www.bit.ly/fcc-relaxing-cat"
+      alt="A cute orange cat lying on its back.">
+  </div>
+
+  <!--Padding margin lesson-->
+  <div>
+    <h2 class="yellow-text">Working with padding:</h2>
+
+    <p class="my-writing">Follow <a
+        href="https://www.freecodecamp.org/learn/responsive-web-design/basic-css/adjust-the-padding-of-an-element">this
+        link to the FCC lesson</a></p>
+    <h5 class="injected-text">margin</h5>
+    <div class="box yellow-box">
+      <h5 class="box red-box">padding</h5>
+      <h5 class="box blue-box">padding</h5>
+    </div>
+    <div class="box yello-box">
+      <p class="yellow-box">h</p>
+    </div>
+  </div>
+  <!--END of padding margin lesson-->
+  <!-- Attrubutes type-->
+  <div class="yellow-text">
+    <h2>Use Attribute selectors to style elements</h2>
+    <p>So far I have been using id or class attributes to elements that I wished to specify style to. These are known as
+      ID and class slectors. Other CSS selectors I can use to select custom groups of element styles are fo instance:
+    </p>
+    <ul>
+      <li><code>[attr=value]</code> - this selector type matches and styles elements with a specific attribute
+        <strong>value</strong> <em>i.e</em> the "type" radio for radio buttons (such as in the form above) can be
+        specified in CSS as such: <code>[type='radio'] { margin: 20px 0px 20px 0px }</code> and the style will be
+        applied to all elements specified as seen on line 36.
+      </li>
+    </ul>
+  </div>
+  <!-- End of attributes -->
+  <div class="yellow-text">
+    <!-- Absolute and relative units-->
+    <!-- End of absolute and relative units-->
+    <h2>Absolute and relative units:</h2>
+    <p class="my-writing">So far I used <code>px</code> to set units in picels which are a type of length unit that is
+      absolute. different length units I can use are:</p>
+    <ul class="my-writing">
+      <li><code>mm</code> milimeter</li>
+      <li><code>in</code> for inches</li>
+      <li>These are absolute units that approximate the actual measurement on a screen</li>
+    </ul>
+    <p class="my-writing">Other units depending on a scrren's resolution <em>i.e.</em> relative units are:</p>
+    <ul class="my-writing">
+      <li><code>em</code> based on the size of an element's font. If uesd to set font-size property itself, is relative
+        to the parent's font size.</li>
+      <li><code>rem</code> relative to font-size of the root element</li>
+      <li>For more see <a href=https://www.w3schools.com/cssref/css_units.asp>w3 schools'</a> website.</li>
+    </ul>
+  </div>
+  <!-- End of absolute and relative units-->
+  <!-- CSS inheritence-->
+  <div class="my-writing">
+    <h2> CSS inheritance:</h2>
+    <p>Every HTML page has a <code>body</code> element.</p>
+    <p> I will try and insert an HTML webpage inside this webpage as an <code>iFrame</code> to show the body using a
+      background.</p>
+    <iframe src="iframes/iframe1.html" title="CSS iheritance 1"></iframe>
+    <p>The above iframe is from <code>root/iframes/iframe1.html</code> and uses the CSS
+      <code>root/iframes/iframe1.css</code>.
+    </p>
+    <p>As demonstrated in this iframe I have specified the color red to the body of that HTML file.</p>
+    <p>Furthermore, I shoud note that the border color inherited the color of the class "my-writing" (purple) from the
+      <code>div</code> section.
+    </p>
+    <p class="a-comment">Following the extent of the lesson I added inheritance from body to h1 element on its
+      corresponding CSS.</p>
+    <p class="a-comment">To summarize the subject, inheritance controls the flow of styles to apply when no properties
+      are specified to each element by the basic hirarchy (body>div>p&gt;h and on. Furthermore, the hirarchy of CSS goes
+      from top to bottom, such that if I declatre two classes to the same element the last one on the CSS file is
+      chosen.</p>
+  </div>
+
+  <!-- End of inheritance-->
+  <!-- Penguin -->
+  <div class="my-writing">
+    <h2>Here's the penguin excercise</h2>
+    <p>I will stick it into an iframe:</p>
+
+    <iframe src="iframes/iframe2.html" title="penguin" width="400em" height="360em"></iframe>
+    <p>Here I have learned about variables in CSS. A variable is declared: <code>--var-name: property;</code> which then
+      can be called as a propety on other arguments like so: <code>background: var(--var-name);</code></p>
+    <p> A <strong>fallback</strong> variable is an argument that makes the browser fall back to if the variable is
+      missing in the CSS file. It is used like so: <code>background: var(--black-skin, black);</code></p>
+  </div>
+  <!-- Penguin's Demise-->
+
+  <!-- Compatibility -->
+  <div class="my-writing">
+    <h2>Compatibility and fallback</h2>
+    <p>If I ran into browser compatibility issues, an easy fix is to probide a fallback option. The browser parses the CSS ignoring any properties that it doesn't recognize or support. For example, if the CSS variable to assign a background color on a site is ignored on IE (which does not work with variables) - it will not load the variable and ignore that property. If it can't find any other value set for that property, it will revert to the default value, which is typically not ideal.</p>
+    <p>Henc, I can provide a fallback by adding a property above the one that does not render on the browser on the same CSS selector. </p>
+    <p><code>:root{ --red-color: red;}</code></p>
+    <p><code>.red-box { background: red;</code> This is the fallback.</p>
+    <p><code> background: var(--red-color);}</code></p>
+    <p>Root is a <em>pseudo-class</em> selector that matches the root element of the document, usually the <code>html</code> element. By creating my variables in <code>:root</code>, they will be available globally and can be accessed from any other selector in the style sheet.</p>
+    <p>Note that when you create a variable, it is available for you to use inside the selector in which you create it. It also is available in any of that selector's descendants. (inheritance)</p>
+
+  </div>
+
+</body>
+<!-- ################## -->
+<!-- ################## -->
+<!-- ################## -->
+
+</html>
+<!--SO far 10 hours spent on learning This course (stated at 300 hr)-->

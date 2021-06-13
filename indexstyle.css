@@ -1,0 +1,103 @@
+*, code {
+    font-family: Hack, monospace;
+}
+
+code {
+    background-color: #3C3836;
+    color:#9A8B7A !important;
+}
+
+body {
+    background-color: #282828;
+    margin: 6em;
+}
+
+a {
+    color:#BBBF37;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.yellow-text {
+    color: #FEBF41;
+    font-size: 12pt;
+}
+
+.smaller-image {
+    width: 100px;
+}
+
+.my-writing {
+    color:#EAD9B4;
+}
+
+.thin-blue-border {
+    border-color:rgb(35, 33, 53);
+    border-width: 0.4em;
+    border-style: solid;
+}
+
+.thin-rounded-blue-border {
+    border-color:rgb(35, 33, 53);
+    border-width: 0.6em;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.rounded-blue-border {
+    border-color:rgb(35, 33, 53);
+    border-width: 0.6em;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.a-comment {
+    background: #9A8B7A !important;
+    color:#EAD9B4 !important;
+    padding: 0.6em 0.6em 0.6em 0.6em !important;
+    margin: 0.9em 5em 0.9em 5em !important;
+    border-radius: 1em !important;
+    line-height: 1.7em !important;
+    text-align: center !important;
+ }
+
+ /* This section is from the lesson https://www.freecodecamp.org/learn/responsive-web-design/basic-css/adjust-the-padding-of-an-element*/
+.injected-text {
+    margin-bottom: -25px;
+    text-align:center;
+}
+.box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+}
+.red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+}
+
+.blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    margin: 15px;
+}
+/* marggin decreases the size of the box from the sides to the text */
+/* padding increases the size of the box from top and bottom to the text*/
+.yellow-box {
+    background-color: yellow;
+    padding: 10px 5px 5px 10px;
+}
+
+/* margin and padding has 
+top, right bottom and left 
+configuration options in that order
+*/
+
+[type='radio'] {
+    margin: 10px 0px 20px 0px; 
+}
